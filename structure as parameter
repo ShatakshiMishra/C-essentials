@@ -6,16 +6,19 @@ struct rectangle
     int l,b;
 }
 rec={12,11};
+//pass by value
 void area(struct rectangle rec)
 {
     printf("%d",rec.l*rec.b);
 }
+//pass by reference
 /*void new_area(struct rectangle &rect)
 {
  rect.l=9;
  rect.b=10;
  printf("%d",rect.l*rect.b);
 }*/
+//pass by address
  void print(struct rectangle *recc)
 {
     printf("%d",(recc->l)*(recc->b));
